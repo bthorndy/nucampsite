@@ -52,6 +52,7 @@
                                 <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
+                                        <option disabled hidden selected>Select...</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -67,9 +68,22 @@
                                     <input class="form-control" type="date" name="date" id="date" placeholder="MM/DD/YYYY"/>
                                 </div>
                             </div>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label" for="siteType">Campsite Type</label>
+                                <div class="col">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                          <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked>Tent
+                                        </label>
+                                        <label class="btn btn-primary">
+                                          <input type="radio" name="siteType" id="siteRV" autocomplete="off">RV
+                                    </div>
+
+                                </div>
+                            </div>
                             <div class="row  form-group">
                                 <div class="col">
-                                    <button type="submit" class="btn btn-secondary">Cancel</btn>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</btn>
                                     <button type="submit" class="btn btn-primary ml-1">Search</btn>
                                 </div>
                             </div>
